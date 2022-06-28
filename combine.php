@@ -16,6 +16,7 @@ class PlaylistCombiner
 	{
 		echo "Обрабатываем плейлист: $fn" . PHP_EOL;
 		$allToGrp = $options['all-grp'] ?? '';
+		$noDups = $options['nodups'] ?? false;
 		$pls_lines = file($fn);
 		$l = 0;
 		$chn = [];
@@ -37,7 +38,7 @@ class PlaylistCombiner
 				{
 					$chnInfo = explode(',', $line);
 					$chnName = $chnInfo[1];
-					if (isset($this->plsHash[$chnName]))
+					if (isset($this->plsHash[$chnName]) && !$noDups)
 					{
 						echo 'WARNING: найден канал с повторяющимся названием: [' . $chnName . ']' . PHP_EOL;
 						$i = 0;
