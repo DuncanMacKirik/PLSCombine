@@ -16,4 +16,5 @@ If ```nodups``` option is not enabled for a source, then channels imported from 
 ```  
 DupChannel (1)  
 DupChannel (2)  
-...``` etc.  
+...```  
+ etc.  
