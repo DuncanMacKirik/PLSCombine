@@ -4,5 +4,11 @@ Can be used from command line (shell) or on a web server (eg, to provide a URL f
 Said rules are configured by editing combine.ini.  
 Each line specifies a single playlist source using this format:  
 ```  
-<url>=<type>[:<options]  
-```
+<url>=<type>[:<options>]  
+```  
+<url> can be a local path, or a URL (HTTPS, FTP, or any other protocol supported by PHP file functions, see https://www.php.net/manual/en/wrappers.php).  
+<type> can be one of these:  
+  * full - include all channels from this source  
+  * all-grp:<groupname> - include all channels from this source and place them into separate group "<groupname>"  
+  * nodups - include all channels from this source, but only if their names don't already exist.  
+  
