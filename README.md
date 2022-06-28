@@ -11,7 +11,9 @@ Each line specifies a single playlist source using this format:
   * ```full``` - include all channels from this source;  
   * ```all-grp:\<groupname\>``` - include all channels from this source and place them into separate group "\<groupname\>";  
   * ```nodups``` - include all channels from this source, but only if their names don't already exist.  
+  
 If ```nodups``` option is not enabled for a source, then channels imported from it with names that already exist will be renamed like this (assuming channel named DupChannel already exists):  
+```  
 DupChannel (1)  
 DupChannel (2)  
-... etc.  
+...``` etc.  
