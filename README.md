@@ -6,9 +6,9 @@ Each line specifies a single playlist source using this format:
 ```  
 <url>=<type>[:<options>]  
 ```  
-<url> can be a local path, or a URL (HTTP(S), FTP, or any other protocol supported by PHP file functions; see https://www.php.net/manual/en/wrappers.php for the full list).  
+<url> can be a local path, or a URL (http(s)://, ftp://, or any other protocol supported by PHP file functions; see https://www.php.net/manual/en/wrappers.php for the full list).  
 <type> can be one of these:  
-  * full - include all channels from this source  
-  * all-grp:<groupname> - include all channels from this source and place them into separate group "<groupname>"  
-  * nodups - include all channels from this source, but only if their names don't already exist.  
+  * ```full``` - include all channels from this source;  
+  * ```all-grp:\<groupname\>``` - include all channels from this source and place them into separate group "\<groupname\>";  
+  * ```nodups``` - include all channels from this source, but only if their names don't already exist.  
   
