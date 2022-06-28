@@ -1,3 +1,4 @@
+
 # PLSCombine
 A quick-and-dirty PHP script for combining multiple IPTV playlists into one.  
 Can be used from command line (shell) or on a web server ~~(eg, to provide a URL for a single playlist)~~ (to be called either manually or by a scheduler), to unify and/or filter one or several other playlists according to specified rules.  
@@ -19,3 +20,12 @@ DupChannel (2)
 ...
 ```  
 etc.  
+  
+## TODO:  
+- [ ] more options
+- [ ] multiple options per source
+- [ ] actual filters
+- [ ] case insensitivity
+- [ ] online (web url) mode?
+- [ ] translation
+- [ ] better logging, output redirection?
